@@ -1,6 +1,11 @@
 <!DOCTYPE html> 
 <html>
  <head>
+     <script type="text/javascript">
+          var inputNome = document.getElementById("nome");
+          alert(inputNome.value);
+          inputNome.value = "Texto dinâmico"; 
+     </script>
  </head>
  <body>
     <form>
@@ -9,10 +14,5 @@
         <input id="senha" placeholder="senha" type="password" /><br />
         <button>Cadastrar</button>
     </form>
-    <script type="text/javascript">
-          var inputNome = document.getElementById("nome");
-          alert(inputNome.value);
-          inputNome.value = "Texto novo"; 
-     </script>
  </body>
 </html>
