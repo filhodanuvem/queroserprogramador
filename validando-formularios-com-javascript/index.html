@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script type="text/javascript">
+  window.onload = function () { 
+      var botao = document.getElementById("botao");
+      botao.onclick = function () {
+        var inputPassword = document.getElementById("password"); 
+        var inputEmail = document.getElementById("email"); 
+        if (inputPassword.value.length < 6 || inputEmail.value.indexOf('@') == -1) {
+            alert('Verifique os campos preenchidos e tente novamente'); 
+        } 
+      };
+  };
+ </script>
+</head>
+<body>
+   <form>
+      <input placeholder="Nome" type="text" id="nome" />
+      <input placeholder="email" type="email" id="email" /> 
+      <input placeholder="senha" type="password" id="password" />
+      <button id="botao">Cadastrar</button>
+   </form>
+</body>
+</html>
